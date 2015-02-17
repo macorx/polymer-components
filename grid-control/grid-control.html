@@ -34,7 +34,7 @@
         </thead>
         <tbody>
           <template repeat="{{row, rowIndex in rows}}">
-            <tr class="{{rowIndex % 2 > 0 ? 'odd' : ''}}" >
+            <tr class="{{rowIndex % 2 > 0 ? 'odd' : 'even'}}" >
               <template repeat="{{column in columns}}">
                 <td>{{row[column.propertyname]}}</td>
               </template>

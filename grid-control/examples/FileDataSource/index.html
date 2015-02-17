@@ -6,7 +6,25 @@
     <link rel="import" href="../../grid-control.html">
     <link rel="import" href="../../grid-column.html">    
     <style>
+        grid-control::shadow th {
+            background-color: orange;
+            color: white;
+            height: 30px;
+        }
+
+        grid-control::shadow tr {
+            color: white;
+            text-align: center;
+        }
         
+        grid-control::shadow tr.even {
+            background-color: purple;
+        }       
+        
+        grid-control::shadow tr.odd {
+            background-color: brown;
+            
+        }
     </style>
   </head>
   <body unresolved touch-action="auto">
